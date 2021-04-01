@@ -1,8 +1,14 @@
+h2 {
+  font-family: 'Courier New', Courier, monospace;
+}
+
 .App {
   padding-top: 115px;
+  padding-bottom: 115px;
   text-align: center;
   display: flex;
   justify-content: center;
+  background-color: #707070;
 }
 
 .calci {
@@ -10,17 +16,22 @@
   height: 500px;
   flex-direction: column;
   display: flex;
+  cursor: pointer;
+}
+.calci:active {
+  cursor: grab;
 }
 
 
 .display {
   width: 398px;
   height: 98px;
-  border: 1px black solid;
-  background-color: gray;
+  border: 0.001em white solid;
+  background-color: #555555;
   display: flex;
   align-items: center;
   justify-content: center;
+  color:whitesmoke;
 }
 
 .buttons {
@@ -40,35 +51,18 @@
   height: 100%;
   background-color: burlywood ;
 }
-.but {
+.other_buttons {
   width : 300px;
   height: 100px;
   flex-direction: row;
   display: flex;
 }
-#clear {
-  width : 74px;
+
+#other_btn{
+  width : 124px;
   height : 98px;
   border : 1px black solid;
-  background-color: orange;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#ans {
-  width : 149px;
-  height : 98px;
-  border : 1px black solid;
-  background-color: orange;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-#store{
-  width : 74px;
-  height : 98px;
-  border : 1px black solid;
-  background-color: orange;
+  background-color: #efa134;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -76,16 +70,15 @@
 .nums {
   width : 300px;
   height : 300px;
-  
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap;  
 
   background-color: blanchedalmond;
 }
 
 #num {
   width : 98px;
-  height : 98px;
+  height : 73px;
   border : 1px black solid;
   background-color: whitesmoke;
   display: flex;
@@ -95,10 +88,20 @@
 
 #operators {
   width : 98px;
-  height : 98px;
+  height : 73px;
   border : 1px black solid;
   background-color: cornflowerblue;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+#equal {
+  width : 98px;
+  height : 98px;
+  border : 1px black solid;
+  background-color: lightgreen ;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: larger;
 }
